@@ -19,3 +19,30 @@ LPURPLE="\[\033[1;35m\]"
 YELLOW="\[\033[1;33m\]"
 WHITE="\[\033[1;37m\]"
 NOCOLOR="\[\033[0m\]"
+
+# Gladly adapted off reddit
+PROMPT_COMMAND=smile_prompt
+function smile_prompt {
+    if [ "$?" -eq "0" ]
+    then 
+        # smiley
+        SC="${GREEN}:)"
+    else 
+        # frowney
+        SC="${RED}:("
+    fi
+
+    if [ $UID -eq 0 ] 
+    then
+        # root user make it red
+        UC="${RED}"
+    else
+        # non root user keep it normal
+        UC="${LBLUE}"
+    fi
+
+    # default color
+    DF='\[\e[0m\]'
+    PS1="${YELLOW}[\@] ${UC}\u@${LPURPLE}\h:\w ${SC} ${DF} "
+}
+#PS1="$YELLOW[\@] $LPURPLE\u@\h: \w> $CYAN"
