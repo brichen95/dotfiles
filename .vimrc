@@ -44,7 +44,7 @@ let g:netrw_liststyle = 3
 set tags=./tags,tags;$HOME
 
 " Colors
-set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
+"set background=dark
+"let g:solarized_termcolors=256
+"colorscheme solarized
 

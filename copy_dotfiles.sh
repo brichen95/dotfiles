@@ -6,7 +6,7 @@ cp .tmux.conf ~/
 cp .vimrc ~/
 
 echo "Copying vim colors..."
-mkdir ~/.vim/
+mkdir -p ~/.vim/colors
 cp vim-colors/* ~/.vim/colors
 
 echo "Sourcing files..."
