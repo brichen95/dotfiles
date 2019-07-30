@@ -1,8 +1,4 @@
-" Don't try to be vi compatible
-set nocompatible
-
-" Helps force plugins to load correctly when it is turned back on below
-filetype off
+syntax on
 
 " Tabs
 set tabstop=4
@@ -16,12 +12,6 @@ set wildmenu
 
 " Show matching brackets
 set showmatch
-
-" Syntax highlighting
-syntax on
-
-" File stats on the lower right hand
-set ruler
 
 " Smart case/case insensitive matching
 set ignorecase
@@ -43,7 +33,6 @@ set mouse=a
 " Load filetype specific plugins
 filetype plugin indent on
 
-" Status bar
 set laststatus=2
 
 " tree view when looking at directories
@@ -55,7 +44,7 @@ let g:netrw_liststyle = 3
 set tags=./tags,tags;$HOME
 
 " Colors
-set t_Co=256
 set background=dark
 let g:solarized_termcolors=256
-let g:solarized_termtrans=1
+colorscheme solarized
+
