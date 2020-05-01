@@ -46,3 +46,6 @@ function smile_prompt {
     PS1="${YELLOW}[\@] ${UC}\u@${LPURPLE}\h:\w ${SC} ${DF} "
 }
 #PS1="$YELLOW[\@] $LPURPLE\u@\h: \w> $CYAN"
+
+# sweet sweet silence...
+bind 'set bell-style none'
